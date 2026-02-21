@@ -7,7 +7,7 @@ import readlineSync from 'readline-sync';
 const platform = os.platform(); // which os platform we are using currenlty provide to LLM for command 
 const execute = util.promisify(exec); // with the help of this execute we can run command provided by LLM in our Machinen
 // Configure the client
-const ai = new GoogleGenAI({});
+const ai = new GoogleGenAI({});    // api key here we can put 
 // Step 1 : Need to make tool so this tool execute command becasue executing command only we can create folder and files like mkdir calculator, touch calculator, echo for write paste code into thsese files 
 //tool
  async function executeCommand({command})
